@@ -20,29 +20,6 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  display:flex;
-  padding:16px;
-  flex-wrap:wrap;
-  justify-content:space-between; 
-  /*
-    NOTE: Keep space-between for modal
-    The right chunk is itself a flex container and then you'll have 3 flex containers stacked on top of each other
-  */
-}
-
-.header
-{
-  display:flex;
-  padding:12px;
-}
-
-.right-header
-{
-  display:flex;
-  width:428px;
-  justify-content:space-between;
-  align-items:center;
-  padding-bottom:16px;
 }
 
 .icon {
@@ -56,7 +33,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .close-button {
@@ -71,9 +47,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
-  flex-shrink: 0;
-  justify-self: flex-end;
-  padding:0;
+  padding: 0;
 }
 
 button {
@@ -86,28 +60,10 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
-  display:flex;
-  align-items:center;
-  
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
-  display:flex;
-  align-items:center;
-}
-
-.text
-{
-  display:flex;
-  align-items:center;
-}
-
-.warning
-{
-  font-weight:bold;
-  font-size:20px;
-  padding:0 12px;
 }
